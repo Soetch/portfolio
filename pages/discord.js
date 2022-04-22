@@ -36,8 +36,12 @@ export default function Discord() {
       </header>
 
       <main className={styles.main}>
-        <h1 className="text-9xl underline">
+        <h1 className="text-6xl underline max-w-md mx-auto xl:max-w-6xl lg:max-w-6xl md:max-w-2xl text-center">
           Soetch#8877
+          <br></br>
+          <p className="text-3xl underline max-w-md mx-auto xl:max-w-3xl lg:max-w-3xl md:max-w-1xl text-center">
+           Yes, that's too big, I know.
+          </p>
         </h1>
       </main>
 
