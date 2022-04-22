@@ -1,0 +1,22 @@
+{
+  "name": "soetch-page",
+  "version": "1.0.0",
+  "description": "The Github Page of Soetch !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Soetch/soetch.github.io.git"
+  },
+  "author": "Soetch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Soetch/soetch.github.io/issues"
+  },
+  "homepage": "https://github.com/Soetch/soetch.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
