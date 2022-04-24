@@ -14,10 +14,9 @@ export default function Home() {
         <meta property="og:title" content="Soetch's Home"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://soetch.vercel.app/"/>
-        <meta property="og:image" content="/soetch.svg"/>
+        <meta property="og:image" content="https://soetch.vercel.app/soetch.svg"/>
         <meta property="og:description" content="Soetch's Portfolio !"/>
-
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico"/>
       </Head>
 
       <header className="py-3">
@@ -36,10 +35,25 @@ export default function Home() {
       </header>
 
       <main className={styles.main}>
-        <div className="">
-        <div className="w-full max-w-md mx-auto xl:max-w-5xl lg:max-w-5xl md:max-w-2xl md:flex bg-white rounded-lg border border-gray-200 shadow-md dark:bg-black dark:border-gray-700">
+      <div className="py-3.5 bg-slate-400 rounded-3xl">  
+        <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+          <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+            <div className="md:5/12 lg:w-5/12">
+              <Image src="/Marceau.jpg" alt="Photo Marceau" width="1000%" height="1250%" className="rounded-3xl"/>
+            </div>
+          <div className="md:7/12 lg:w-6/12">
+            <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">Marceau Malégeant (a.k.a Soetch)</h2>
+            <p className="mt-0 text-gray-800 text-xl">French Developer & Designer.</p>
+            <p className="mt-4 text-gray-600"> Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br></br>
+      <div className="">
+        <div className="rounded-3xl w-full max-w-md mx-auto xl:max-w-5xl lg:max-w-5xl md:max-w-2xl md:flex bg-white rounded-lg border border-gray-200 shadow-md dark:bg-black dark:border-gray-700">
           <a href="https://github.com/Soetch/SoetchNoModTemplate-1.16.5">
-            <img className="object-cover" src="/minecraft-bg.png" alt="Soetch Logo"></img>
+            <img className="rounded-3xl" src="/minecraft-bg.png" alt="Soetch Logo"></img>
           </a>
           <div className="p-5">
             <a href="https://github.com/Soetch/SoetchNoModTemplate-1.16.5">
@@ -53,9 +67,9 @@ export default function Home() {
           </div>
         </div>
         <br/>
-        <div className="w-full max-w-md mx-auto xl:max-w-5xl lg:max-w-5xl md:max-w-2xl md:flex bg-white rounded-lg border border-gray-200 shadow-md dark:bg-black dark:border-gray-700">
+        <div className="rounded-3xl w-full max-w-md mx-auto xl:max-w-5xl lg:max-w-5xl md:max-w-2xl md:flex bg-white rounded-lg border border-gray-200 shadow-md dark:bg-black dark:border-gray-700">
           <a href="https://github.com/Hanabi-Corporation/HanabiOres-1.16.5">
-            <img className="object-cover" src="/lirium.png" alt="Soetch Logo"></img>
+            <img className="rounded-3xl" src="/lirium.png" alt="Soetch Logo"></img>
           </a>
           <div className="p-5">
             <a href="https://github.com/Hanabi-Corporation/HanabiOres-1.16.5">
@@ -69,9 +83,9 @@ export default function Home() {
           </div>
         </div>
         <br/>
-        <div className="w-full max-w-md mx-auto xl:max-w-5xl lg:max-w-5xl md:max-w-2xl md:flex bg-white rounded-lg border border-gray-200 shadow-md dark:bg-black dark:border-gray-700">
+        <div className="rounded-3xl w-full max-w-md mx-auto xl:max-w-5xl lg:max-w-5xl md:max-w-2xl md:flex bg-white rounded-lg border border-gray-200 shadow-md dark:bg-black dark:border-gray-700">
           <a href="https://github.com/Soetch/soetch.github.io">
-            <img className="object-cover" src="/webdev-bg.png" alt="Soetch Logo"></img>
+            <img className="rounded-3xl" src="/webdev-bg.png" alt="Soetch Logo"></img>
           </a>
           <div className="p-5">
             <a href="https://github.com/Soetch/soetch.github.io">
@@ -86,7 +100,6 @@ export default function Home() {
         </div>
       </div>       
       </main>
-
       <footer className={styles.footer}>
         <div>
         <a
