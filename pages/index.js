@@ -1,154 +1,72 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable @next/next/link-passhref */
-/* eslint-disable react/no-unescaped-entities */
-import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head"
+import Image from "next/image"
+import { Aka, Location } from "../components/Icons"
+import Buttons from "../components/Buttons"
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Soetch's Home</title>
-        <meta property="og:title" content="Soetch's Home"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://soetch.vercel.app/"/>
-        <meta property="og:image" content="https://soetch.vercel.app/soetch.svg"/>
-        <meta property="og:description" content="Soetch's Portfolio !"/>
-        <link rel="icon" href="/favicon.ico"/>
-      </Head>
+    return(
+        <>
+            <Head>
+                <title>Marceau (Soetch) Malégeant</title>
+                <meta property="og:title" content="Marceau (Soetch) Malégeant"/>
+                <meta property="og:description" content="Marceau's portfolio. Please contact me using the links at the bottom !"/>
+                <meta property="og:image" content="/public/marceau.png"/>
+                <meta property="og:author" content="Soetch"/>
+            </Head>
+            <body className="bg-gray-900">
+                <div className="mb-6">
+                    <div className="grid place-content-center">
+                        <div className="mt-8">
+                            <div id="name" className="grid box-border bg-gray-700 w-150 h-96 rounded-3xl place-items-center mb-1">
+                                <div className="grid box-border ring w-36 h-36 rounded-full mt-12 ">
+                                    <Image src="/marceau.jpg" alt="test" width={1000} height={1000} className="rounded-full"/>
+                                </div>
+                                <div className="text-center text-4xl text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-purple-600 w-120 mt-4">
+                                    Marceau Malégeant
+                                </div>
+                                <br/>
+                                <Buttons/>
+                            </div>
+                            <div className="flex gap-5 place-content-center">
+                                <div className="flex bg-gray-700 gap-4 rounded-2xl mt-4 w-44">
+                                    <Aka/>
+                                    <div className="text-2xl mt-5 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 h-12">
+                                        Soetch
+                                    </div>
+                                </div>
+                                <div className="flex bg-gray-700 gap-4 rounded-2xl mt-4 w-44">
+                                    <Location/>
+                                    <div className="text-2xl mt-5 text-transparent bg-clip-text bg-gradient-to-l from-blue-600 to-purple-600 h-12">
+                                        France
+                                    </div>
+                                </div>
 
-      <header className="py-3">
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          <span className={styles.logo}>
-            <Link href="https://soetch.vercel.app">
-              <Image src="/soetch.svg" alt="Soetch Logo" width={150} height={38} />
-            </Link>
-          </span>
-        </div>
-      </header>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div className="flex place-content-center">
+                    <div className="grid place-items-center w-64 h-16 rounded-full bg-gray-700 mb-1">                            
+                        <svg xmlns="http://www.w3.org/2000/svg" className="animate-bounce text-gray-900" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="m4 9l8 8l8-8"/></svg>
+                    </div>
+                </div>
+                <div className="">
+                    <div className="xl:flex md:grid place-content-center box-border">
+                        <div id="pareditions" className="grid box-border bg-gray-700 h-150 w-120 rounded-3xl place-items-center mt-6 ml-4 mr-4">
 
-      <main className={styles.main}>
-      <div className="py-3.5 bg-slate-400 rounded-3xl">  
-        <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
-          <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
-            <div className="md:5/12 lg:w-5/12">
-              <Image src="/Marceau.jpg" alt="Photo Marceau" width="1000%" height="1250%" className="rounded-3xl"/>
-            </div>
-          <div className="md:7/12 lg:w-6/12">
-            <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">Marceau Malégeant (a.k.a Soetch)</h2>
-            <p className="mt-0 text-gray-800 text-xl">French Developer & Designer.</p>
-            <p className="mt-4 text-gray-600"> Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br></br>
-      <div className="">
-        <div className="rounded-3xl w-full max-w-md mx-auto xl:max-w-5xl lg:max-w-5xl md:max-w-2xl md:flex bg-white rounded-lg border border-gray-200 shadow-md dark:bg-black dark:border-gray-700">
-          <a href="https://github.com/Soetch/SoetchNoModTemplate-1.16.5">
-            <img className="rounded-3xl" src="/minecraft-bg.png" alt="Soetch Logo"></img>
-          </a>
-          <div className="p-5">
-            <a href="https://github.com/Soetch/SoetchNoModTemplate-1.16.5">
-              < h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">SoetchNoMod Template for Minecraft 1.16.5</h5>
-            </a>
-            <p className="mb-3 font-normal dark:text-gray-400">A Template for Minecraft Modding by Soetch. Created for the 1.16.5 version.</p>
-            <a href="https://github.com/Soetch/SoetchNoModTemplate-1.16.5" className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              🚀 See on Github
-              <svg className="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-            </a>
-          </div>
-        </div>
-        <br/>
-        <div className="rounded-3xl w-full max-w-md mx-auto xl:max-w-5xl lg:max-w-5xl md:max-w-2xl md:flex bg-white rounded-lg border border-gray-200 shadow-md dark:bg-black dark:border-gray-700">
-          <a href="https://github.com/Hanabi-Corporation/HanabiOres-1.16.5">
-            <img className="rounded-3xl" src="/lirium.png" alt="Soetch Logo"></img>
-          </a>
-          <div className="p-5">
-            <a href="https://github.com/Hanabi-Corporation/HanabiOres-1.16.5">
-              < h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">HanabiOres for Minecraft 1.16.5</h5>
-            </a>
-            <p className="mb-3 font-normal dark:text-gray-400">Hanabi Ores 1.16.5, a simple Minecraft Mod adding Ores (no joke), Tools and Armors !</p>
-            <a href="https://github.com/Hanabi-Corporation/HanabiOres-1.16.5" className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              🚀 See on Github
-              <svg className="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-            </a>
-          </div>
-        </div>
-        <br/>
-        <div className="rounded-3xl w-full max-w-md mx-auto xl:max-w-5xl lg:max-w-5xl md:max-w-2xl md:flex bg-white rounded-lg border border-gray-200 shadow-md dark:bg-black dark:border-gray-700">
-          <a href="https://github.com/Soetch/soetch.github.io">
-            <img className="rounded-3xl" src="/webdev-bg.png" alt="Soetch Logo"></img>
-          </a>
-          <div className="p-5">
-            <a href="https://github.com/Soetch/soetch.github.io">
-              < h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Soetch's Home (and portfolio)</h5>
-            </a>
-            <p className="mb-3 font-normal dark:text-gray-400">The code for the site you're exploring !</p>
-            <a href="https://github.com/Soetch/soetch.github.io" className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              🚀 See on Github
-              <svg className="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-            </a>
-          </div>
-        </div>
-      </div>       
-      </main>
-      <footer className={styles.footer}>
-        <div>
-        <a
-          href="https://github.com/soetch"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image src="/github.svg" alt="Github Logo" width={32} height={32} />
-        </a>
-        </div>
+                        </div>
+                        <div id="wysiaim" className="grid box-border bg-gray-700 h-150 w-120 rounded-3xl place-items-center mt-6 ml-4 mr-4">
 
-        <Image src="/line.png" alt="line" width={64} height={32} />
+                        </div>
+                    </div>
+                </div>
 
-        <div>
-        <a
-          href="https://twitch.tv/soetch"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image src="/twitch.svg" alt="Twitch Logo" width={32} height={30} />
-        </a>
-        </div>
-
-        <Image src="/line.png" alt="line" width={64} height={32} />
-
-        <div>
-        <a
-          href="https://twitter.com/soetch"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image src="/twitter.svg" alt="Twitter Logo" width={32} height={30} />
-        </a>
-        </div>
-
-        <Image src="/line.png" alt="line" width={64} height={32} />
-
-        <div>
-        <a
-          href="/discord"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Link href="/discord">
-            <Image src="/discord.svg" alt="Discord Logo" width={32} height={30} />
-          </Link>
-        </a>
-        </div>
-      </footer>
-    </div>
-  )
+                <div className="flex place-content-center mt-6">
+                    <div className="grid place-items-center w-64 h-16 rounded-full bg-gray-700 mb-1">                            
+                        <svg xmlns="http://www.w3.org/2000/svg" className="animate-bounce text-gray-900" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="m4 9l8 8l8-8"/></svg>
+                    </div>
+                </div>
+            </body>
+        </>
+    )
 }
