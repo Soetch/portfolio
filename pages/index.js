@@ -19,7 +19,7 @@ export default function Home() {
                         <div className="mt-8">
                             <div id="name" className="grid box-border bg-gray-700 w-150 h-96 rounded-3xl place-items-center mb-1">
                                 <div className="grid box-border ring w-36 h-36 rounded-full mt-12 ">
-                                    <Image src="/marceau.jpg" width={1000} height={1000} className="rounded-full"/>
+                                    <Image src={`https://images2.imgbox.com/2b/6c/rQ3AazlB_o.jpg`} alt="Marceau" width={1000} height={1000} className="rounded-full"/>
                                 </div>
                                 <div className="text-center text-4xl text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-purple-600 w-120 mt-4">
                                     Marceau Malégeant
